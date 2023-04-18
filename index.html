@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Notification Icons and Badges</title>
+</head>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.main{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.main_container{
+width: 500px;
+height: 410px;
+margin-top: 30px;
+line-height: 3;
+text-align: center;
+box-shadow: 3px 5px 18px green;
+
+
+}
+.primary_blue a{
+padding: 10px;
+color: white;
+background-color: blue;
+text-decoration: none;
+border-radius: 10px;
+margin: 30px;
+}
+
+.secondary_gray a{
+padding: 10px;
+color: white;
+background-color: gray;
+text-decoration: none;
+border-radius: 10px;
+margin: 30px;
+}
+
+.success_green a{
+padding: 10px;
+color: white;
+background-color: green;
+text-decoration: none;
+border-radius: 10px;
+margin: 30px;
+}
+
+.danger_red a{
+padding: 10px;
+color: white;
+background-color: red;
+text-decoration: none;
+border-radius: 10px;
+margin: 30px;
+}
+
+.warning_yellow a{
+padding: 10px;
+color: white;
+background-color: yellow;
+text-decoration: none;
+border-radius: 10px;
+margin: 30px;
+}
+.info_skyblue a{
+padding: 10px;
+color: white;
+background-color: skyblue;
+text-decoration: none;
+border-radius: 10px;
+margin: 30px;
+}
+
+/* right corner icon */
+
+.main_container2{
+margin-top: 30px;
+box-shadow: 3px 5px 18px green;
+height: 100px;
+width: 70%;
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.primary_icon a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: blue;
+border-radius: 10px;
+}
+
+.secondary_icon a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: gray;
+border-radius: 10px;
+}
+
+.success_icon a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: blue;
+border-radius: 10px;
+
+}
+.danger_icon a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: red;
+border-radius: 10px;
+}
+.warning_icon a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: yellow;
+border-radius: 10px;
+
+}
+.info_icon a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: skyblue;
+border-radius: 10px;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+	border: 2px solid red;
+    background-color: red;
+    border-radius: 50px;
+    position: relative;
+    left: 56px;
+    bottom: 37px;
+}
+
+/* icon with number batches */
+
+.main_container3{
+margin-top: 30px;
+box-shadow: 3px 5px 18px green;
+height: 100px;
+width: 80%;
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.primary_iconnum a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: blue;
+border-radius: 10px;
+}
+
+.secondary_iconnum a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: gray;
+border-radius: 10px;
+}
+
+.success_iconnum a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: blue;
+border-radius: 10px;
+
+}
+.danger_iconnum a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: red;
+border-radius: 10px;
+}
+.warning_iconnum a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: yellow;
+border-radius: 10px;
+
+}
+.info_iconnum a{
+text-decoration: none;
+padding: 10px;
+color:white;
+background-color: skyblue;
+border-radius: 10px;
+}
+
+.dotnum{
+        width: 28px;
+    height: 18px;
+    background-color: red;
+    border-radius: 25px;
+	text-align: center;
+    position: relative;
+    left: 54px;
+    bottom: 39px;
+	color: white;
+}
+
+/* icon with number batches color gray */
+
+.main_container4
+{
+margin-top: 30px;
+box-shadow: 3px 5px 18px green;
+height: 100px;
+width: 90%;
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.primary_iconclr a{
+text-decoration: none;
+padding: 10px 50px;
+color:white;
+background-color: blue;
+border-radius: 10px;
+}
+
+.secondary_iconclr a{
+text-decoration: none;
+padding: 10px 50px;
+color:white;
+background-color: gray;
+border-radius: 10px;
+}
+
+.success_iconclr a{
+text-decoration: none;
+padding: 10px 50px;
+color:white;
+background-color: blue;
+border-radius: 10px;
+
+}
+.danger_iconclr a{
+text-decoration: none;
+padding: 10px 50px;
+color:white;
+background-color: red;
+border-radius: 10px;
+}
+.warning_iconclr a{
+text-decoration: none;
+padding: 10px 50px;
+color:white;
+background-color: yellow;
+border-radius: 10px;
+
+}
+.info_iconclr a{
+text-decoration: none;
+padding: 10px 50px;
+color:white;
+background-color: skyblue;
+border-radius: 10px;
+}
+
+.dotclr{
+        width: 20px;
+    height: 18px;
+    background-color: #5c5252;
+    text-align: center;
+    position: relative;
+    left: 110px;
+    bottom: 20px;
+	color: white;
+}
+
+</style>
+
+<body>
+<div class="main">
+<div class="main_container">
+<h3>Badges</h3>
+<h1 class="primary_blue">heading 1<a href="#">click</a></h1>
+<h2 class="secondary_gray">heading 2<a href="#">click</a></h1>
+<h3 class="success_green">heading 3<a href="#">click</a></h1>
+<h4 class="danger_red">heading 4<a href="#">click</a></h1>
+<h5 class="warning_yellow">heading 5<a href="#">click</a></h1>
+<h6 class="info_skyblue">heading 6<a href="#">click</a></h1>
+</div>
+
+
+<div class="main_container2">
+
+	<div class="primary_icon">
+		<a href="#"> Profile</a>
+		<p class="dot"></p>
+	</div>
+	
+<div class="secondary_icon"> 
+<a href="#"> Profile</a>
+<p class="dot"></p>
+</div>
+
+<div class="success_icon"> 
+<a href="#"> Profile</a>
+<p class="dot"></p>
+</div>
+
+<div class="danger_icon"> 
+<a href="#"> Profile</a>
+<p class="dot"></p>
+</div>
+
+<div class="warning_icon"> 
+<a href="#"> Profile</a>
+<p class="dot"></p>
+</div>
+
+<div class="info_icon"> 
+<a href="#"> Profile</a>
+<p class="dot"></p>
+</div>
+</div>
+
+<div class="main_container3">
+
+	<div class="primary_iconnum">
+		<a href="#"> Profile</a>
+		<p class="dotnum"><span>99+</span></p>
+	</div>
+	
+<div class="secondary_iconnum"> 
+<a href="#"> Profile</a>
+<p class="dotnum"><span>99+</span></p>
+</div>
+
+<div class="success_iconnum"> 
+<a href="#"> Profile</a>
+<p class="dotnum"><span>99+</span></p>
+</div>
+
+<div class="danger_iconnum"> 
+<a href="#"> Profile</a>
+<p class="dotnum"><span>99+</span></p>
+</div>
+
+<div class="warning_iconnum"> 
+<a href="#"> Profile</a>
+<p class="dotnum"><span>99+</span></p>
+</div>
+
+<div class="info_iconnum"> 
+<a href="#"> Profile</a>
+<p class="dotnum"><span>99+</span></p>
+</div>
+</div>
+
+<div class="main_container4">
+
+	<div class="primary_iconclr">
+		<a href="#"> Profile</a>
+		<p class="dotclr"><span>3</span></p>
+	</div>
+	
+<div class="secondary_iconclr"> 
+<a href="#"> Profile</a>
+<p class="dotclr"><span>3</span></p>
+</div>
+
+<div class="success_iconclr"> 
+<a href="#"> Profile</a>
+<p class="dotclr"><span>3</span></p>
+</div>
+
+<div class="danger_iconclr"> 
+<a href="#"> Profile</a>
+<p class="dotclr"><span>3</span></p>
+</div>
+
+<div class="warning_iconclr"> 
+<a href="#"> Profile</a>
+<p class="dotclr"><span>3</span></p>
+</div>
+
+<div class="info_iconclr"> 
+<a href="#"> Profile</a>
+<p class="dotclr"><span>3</span></p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
